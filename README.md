@@ -5,10 +5,7 @@
 ---
 
 [![status](https://img.shields.io/badge/status-concluído-green)]()
-[![tipo](https://img.shields.io/badge/tipo-TCC-blue)]()
 [![área](https://img.shields.io/badge/área-Machine%20Learning-orange)]()
-[![datasets](https://img.shields.io/badge/datasets-externos-red)]()
-[![código](https://img.shields.io/badge/código-não%20publicado-lightgrey)]()
 [![licença](https://img.shields.io/badge/licença-MIT-green)]()
 
 ---
