@@ -1,0 +1,1 @@
+# Deteccao-de-Baixa-Produtividade-da-Soja-Utilizando-Sensoriamento-Remoto-e-Aprendizado-Profundo
