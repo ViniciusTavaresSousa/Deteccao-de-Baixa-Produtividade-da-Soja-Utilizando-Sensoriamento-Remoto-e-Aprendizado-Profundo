@@ -7,7 +7,7 @@
 [![status](https://img.shields.io/badge/status-concluído-green)]()
 [![tipo](https://img.shields.io/badge/tipo-TCC-blue)]()
 [![área](https://img.shields.io/badge/área-Machine%20Learning-orange)]()
-[![dados](https://img.shields.io/badge/dados-não%20públicos-red)]()
+[![datasets](https://img.shields.io/badge/datasets-externos-red)]()
 [![código](https://img.shields.io/badge/código-não%20publicado-lightgrey)]()
 [![licença](https://img.shields.io/badge/licença-MIT-green)]()
 
@@ -30,6 +30,17 @@ A proposta foi formulada como uma tarefa de **classificação binária**, consid
 A produtividade da soja pode variar significativamente entre áreas agrícolas devido a fatores climáticos, espectrais, edáficos e de manejo. Mesmo dentro de um mesmo município, diferentes propriedades podem apresentar comportamentos produtivos distintos.
 
 Neste projeto, foram integradas diferentes fontes de dados para representar o desenvolvimento da lavoura, as condições ambientais e as características do solo. A metodologia buscou aproximar dados públicos em escala municipal de uma aplicação mais próxima da escala de propriedade rural.
+
+## Datasets
+
+Os datasets utilizados no projeto não estão armazenados diretamente neste repositório. Eles estão disponíveis externamente por meio do Google Drive:
+
+* [Dataset municipal](https://drive.google.com/file/d/1ofIyOb8ejXPp3lpexpqjTjeL6pM-7V9D/view?usp=sharing)
+* [Dataset de propriedades rurais](https://drive.google.com/file/d/1qrzO0Od05t1GAQ7AgdhfcNGnHjHgg0gr/view?usp=sharing)
+
+A base municipal foi construída a partir de dados públicos de produtividade da soja em nível municipal, combinados com atributos vegetativos, climáticos e de solo.
+
+A base de propriedades rurais foi utilizada para calibração, seleção de configurações e validação final do modelo, aproximando a avaliação da escala de aplicação desejada.
 
 ## Fontes de Dados
 
@@ -166,9 +177,11 @@ Deteccao-De-Baixa-Produtividade-Da-Soja-Utilizando-Sensoriamento-Remoto-E-Aprend
 
 ## Observação
 
-Este repositório não contém código-fonte, dados brutos, coordenadas de propriedades, polígonos rurais, modelos treinados ou o arquivo PDF completo do trabalho.
+Este repositório não contém código-fonte, modelos treinados ou o arquivo PDF completo do trabalho.
 
-O objetivo é apenas apresentar publicamente a visão geral, a metodologia e os principais resultados do projeto.
+Os datasets não estão armazenados diretamente no repositório, mas foram disponibilizados externamente via Google Drive apenas para consulta e reprodução da análise.
+
+O objetivo deste repositório é apresentar publicamente a visão geral, a metodologia, os datasets utilizados e os principais resultados do projeto.
 
 ## Autor
 
