@@ -9,6 +9,7 @@
 [![área](https://img.shields.io/badge/área-Machine%20Learning-orange)]()
 [![dados](https://img.shields.io/badge/dados-não%20públicos-red)]()
 [![código](https://img.shields.io/badge/código-não%20publicado-lightgrey)]()
+[![licença](https://img.shields.io/badge/licença-MIT-green)]()
 
 ---
 
@@ -45,6 +46,12 @@ As principais fontes utilizadas na metodologia foram:
 | MapBiomas      | Classe de soja                                       | Identificação das áreas de soja           |
 | MapBiomas Solo | Atributos edáficos                                   | Representação das características do solo |
 
+<div align="center">
+
+<img src="assets/fontes-de-dados.png" width="700" alt="Fontes de dados utilizadas"/>
+
+</div>
+
 ## Metodologia
 
 A metodologia foi organizada em três etapas principais:
@@ -61,7 +68,7 @@ A metodologia foi organizada em três etapas principais:
 
    Foi utilizada uma rede neural profunda para classificar as amostras entre baixa produtividade e produtividade não baixa. Diferentes configurações de entrada foram avaliadas, considerando combinações de índices vegetativos, variáveis climáticas e atributos de solo.
 
-## Atributos Utilizados
+## Organização dos Atributos
 
 Os atributos avaliados foram organizados em três grupos principais:
 
@@ -85,6 +92,12 @@ Os atributos avaliados foram organizados em três grupos principais:
 * Teor de areia
 * Carbono orgânico do solo
 
+<div align="center">
+
+<img src="assets/organizacao-atributos.png" width="700" alt="Organização dos atributos temporais e estáticos"/>
+
+</div>
+
 ## Arquitetura Geral
 
 O modelo recebeu como entrada atributos temporais e estáticos relacionados às áreas de soja analisadas.
@@ -97,11 +110,23 @@ Os atributos temporais representaram a evolução da lavoura e das condições c
 
 </div>
 
+## Protocolo Experimental
+
+A avaliação experimental foi organizada para manter o subconjunto de validação final isolado durante o desenvolvimento.
+
+A base municipal foi utilizada como principal fonte de treinamento. A base de propriedades rurais foi dividida entre calibração/seleção e validação final, permitindo avaliar o comportamento do modelo em uma escala mais próxima da aplicação desejada.
+
+<div align="center">
+
+<img src="assets/protocolo-validacao.png" width="700" alt="Protocolo experimental de validação"/>
+
+</div>
+
 ## Resultados
 
 O modelo final foi avaliado em um subconjunto de validação mantido isolado durante o desenvolvimento.
 
-As principais métricas utilizadas foram:
+As principais métricas obtidas foram:
 
 | Métrica                  |  Valor |
 | ------------------------ | -----: |
@@ -115,8 +140,7 @@ Os resultados indicaram que a abordagem possui potencial para sinalização prel
 
 <div align="center">
 
-<img src="assets/matriz-confusao.png" width="500" alt="Matriz de confusão"/>
-<img src="assets/resultados.png" width="500" alt="Resultados do modelo"/>
+<img src="assets/matriz-confusao.png" width="500" alt="Matriz de confusão final"/>
 
 </div>
 
@@ -133,10 +157,11 @@ Deteccao-De-Baixa-Produtividade-Da-Soja-Utilizando-Sensoriamento-Remoto-E-Aprend
 ├── README.md
 ├── LICENSE
 └── assets
+    ├── fontes-de-dados.png
+    ├── organizacao-atributos.png
     ├── arquitetura-modelo.png
-    ├── metodologia.png
-    ├── matriz-confusao.png
-    └── resultados.png
+    ├── protocolo-validacao.png
+    └── matriz-confusao.png
 ```
 
 ## Observação
@@ -153,6 +178,6 @@ Universidade Tecnológica Federal do Paraná — UTFPR
 
 ## Licença
 
-Este repositório está licenciado sob a licença **CC BY 4.0**. Consulte o arquivo `LICENSE` para mais detalhes.
+Este projeto está licenciado sob a licença **MIT**. Consulte o arquivo `LICENSE` para mais detalhes.
 
 </div>
